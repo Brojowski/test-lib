@@ -1,0 +1,1 @@
+export const API_BASE = "localhost:3000/test"

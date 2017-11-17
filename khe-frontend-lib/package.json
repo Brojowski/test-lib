@@ -1,0 +1,19 @@
+{
+  "name": "khe-frontend-lib",
+  "version": "1.0.0",
+  "description": "An wrapper for the KHE API.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hacksu/khe-frontend-lib.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hacksu/khe-frontend-lib/issues"
+  },
+  "homepage": "https://github.com/hacksu/khe-frontend-lib#readme"
+}
