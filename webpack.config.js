@@ -28,7 +28,10 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'babel-loader',
-        exclude: /node_modules/
+        exclude: /node_modules/,
+        query: {
+          presets:['es2015']
+        }
       },
       {
         test: /\.(png|jpg|gif|svg)$/,
@@ -36,6 +39,11 @@ module.exports = {
         options: {
           name: '[name].[ext]?[hash]'
         }
+      },
+      {
+        test: /\.tsx?$/,
+        loaders: ['babel-loader','ts-loader'],
+        exclude: /node_modules/
       }
     ]
   },
@@ -43,7 +51,7 @@ module.exports = {
     alias: {
       'vue$': 'vue/dist/vue.esm.js'
     },
-    extensions: ['*', '.js', '.vue', '.json']
+    extensions: ['*', '.ts', '.js', '.vue', '.json']
   },
   devServer: {
     historyApiFallback: true,

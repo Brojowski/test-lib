@@ -1,19 +1,36 @@
 {
   "name": "khe-frontend-lib",
   "version": "1.0.0",
-  "description": "An wrapper for the KHE API.",
+  "description": "",
   "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha -r ts-node/register tests/*spec.ts"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hacksu/khe-frontend-lib.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "UNLICENSED",
   "bugs": {
     "url": "https://github.com/hacksu/khe-frontend-lib/issues"
   },
-  "homepage": "https://github.com/hacksu/khe-frontend-lib#readme"
+  "homepage": "https://github.com/hacksu/khe-frontend-lib#readme",
+  "dependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/socket.io-client": "^1.4.32",
+    "axios": "^0.17.0",
+    "socket.io-client": "^2.0.4"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.0.4",
+    "@types/mocha": "^2.2.44",
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
+    "ts-node": "^3.3.0",
+    "typescript": "^2.6.1"
+  }
 }

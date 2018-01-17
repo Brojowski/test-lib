@@ -2,7 +2,7 @@
   "name": "test-lib",
   "description": "Basic HTML framework for testing the khe-frontend-lib.",
   "version": "1.0.0",
-  "author": "Brojowski <alex.gajowski@gmail.com>",
+  "author": "Brojowski",
   "license": "MIT",
   "private": true,
   "scripts": {
